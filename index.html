@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Number Guessing Game Debugging Exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        
+        <style>body {font-family:Arial, Helvetica, sans-serif;}</style>
+        <script type="text/javascript">
+        var num = Math.floor(Math.random() * 100) + 1;
+        var tries = 0;
+        function Guess() {
+            var g = document.form1.guess1.value;
+            tries++;
+            status = "Tries: " + tries;
+            if (g < num)
+                document.form1.hint.value = "No, guess higher.";
+            if (g > num)
+                document.form1.hint.value = "No, guess lower.";
+            if (g == num) {
+                window.alert("Correct!the number was: " + num + "\n You guessed it in " + tries + " tries.");
+                location.reload();
+            }
+            if (tries == 10) {
+                window.alert("Sorry! Times Up, the number was: " + num );
+                location.reload(); 
+            }
+        }
+        </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Guess A Number</h1>
+        <hr/>
+        <p>I'm thinking of a number between 1 and 100. Try and guess it in less than 10 tries.</p>
+        <form name="form1">
+            <input type="text" size="25" name="hint" value="Enter Your Guess.">
+            <br/><br/>
+            <strong>Guess: </strong><br/><br/>
+            <input type="text" name="guess1" size="5"/><br/><br/>
+            <input type="button" value="Guess" onClick="Guess();"/>
+        </form>
+        
+    </body>
+</html>
