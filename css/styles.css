@@ -6,7 +6,7 @@ body {
     background-color: #011222; 
     text-align: center;
     }
-h1 {font-weight: 100; font-family: 'Exo', sans-serif;}
+h1 {font-weight: 900; font-style:italic; font-family: 'Exo', sans-serif; font-size: 300%;}
 input {font-family: 'Exo', sans-serif;}
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -30,8 +30,8 @@ input:focus, textarea:focus, select:focus{
     background-color: #06335a; 
     color:green;
     font-size:175%;
-    font-family:Arial, Helvetica, sans-serif; 
-    font-weight: 100 ;
+    font-weight: 900 !important;
+    font-weight: bold;
 }
 .try {
     background-color: green;
