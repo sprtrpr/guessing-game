@@ -58,3 +58,15 @@ input:focus, textarea:focus, select:focus{
 box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
 
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightblue;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightblue;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightblue;
+  }
