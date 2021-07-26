@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+      fade-in effect on page load using pure JavaScript
+    </title>
+    <script type="text/javascript">
+        //window.onload = fadeIn;
+        function fadeIn() {
+            var fade = document.getElementById("fElem");
+            var opacity = 0;
+            var intervalID = setInterval(function() {
+  
+                if (opacity < 1) {
+                    opacity = opacity + 0.1
+                    fade.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, 50);
+        }
+    </script>
+  
+</head>
+  
+<body id="body">
+<div id="fElem" style="opacity:0;">
+    <br>
+    <h1 style="color: green">GeeksforGeeks</h1>
+    <b> 
+      How to create fade-in effect 
+      on page load using javascript 
+    </b>
+    <p>
+      This page will fade-in after loading
+    </p>
+</div>
+<button onclick="fadeIn()">Make Stuff Fade In</button>
+</body>
+  
+</html>

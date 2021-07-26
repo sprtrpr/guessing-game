@@ -32,7 +32,32 @@
             <input type="text" name="guess1" class="guessbox" size="5" placeholder="?"/><br/><br/>
             <input type="button" value="Guess" class="try" onClick="Guess();"/>
         </form>
-    </div>
-    </div>
+        </div>
+        </div>
+
+        <div class="uWon">
+            <div id="uWonMes">
+                <h1>YOU WON!</h1>
+                <p>Correct! The number was: 
+                    <strong style="font-size:200%;" id="answer"></strong><br/><br/>
+                    You guessed it in <br/>
+                    <strong  id="numTries"></strong><br/>
+                    tries.</p><br/><br/>
+                    <input type="button" value="Play Again!" class="replay" onClick="location.reload();"/>
+            </div>
+            <canvas id='myCanvas' width="1280" height="800" halign="center"></canvas>
+            </div>
+
+            <div class="sry">
+            <div id="sryBkgd">
+                <div id="sryMes">
+                    <h1>SORRY!</h1>
+                    <p>Times up. The number was: 
+                        <strong style="font-size:200%;"  id="answer2"></strong> <br/><br/>
+                        <input type="button" value="Try Again!" class="replay" onClick="location.reload();"/>
+                </div>
+            </div>
+            </div>
+                <script src="js/fireworks.js"></script>
     </body>
 </html>

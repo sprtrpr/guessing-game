@@ -20,9 +20,13 @@ input:focus, textarea:focus, select:focus{
 .gamebox {
     background-color: #06335a; 
     display:block;
+    width:320px;
     padding:20px;
     margin:auto 20px;
     border-radius: 5%;
+    border: 1px solid blue;
+    -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
+    box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
 }
 .hint {
     border:none;
@@ -55,7 +59,7 @@ input:focus, textarea:focus, select:focus{
     height:200px;
     width:200px;
     -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
+    box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -70,3 +74,119 @@ box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: lightblue;
   }
+/* WIN Styles */
+  
+.uWon {
+    opacity:0; 
+    background-color:#0a0716; 
+    display:none; 
+    width:100%; 
+    height:100vh; 
+    overflow:hidden; 
+    text-align:center; 
+    z-index:20;
+}
+#uWonMes {
+    position:absolute; 
+    z-index:10;
+    left:50%; 
+    margin-left:-170px; 
+    top:25%; 
+    width:300px; 
+    min-height:400px; 
+    text-align:center; 
+    border:1px solid #FFF; 
+    padding:20px; 
+    font-size:x-large; 
+    -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
+    box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
+    background-color:rgba(0, 128, 0, 0.81); 
+    border-radius: 5%; 
+}
+#uWonMes h1 {
+    font-weight: 900; 
+    font-style:italic; 
+    font-family: 'Exo', sans-serif; 
+    font-size: 200%; 
+    color:#FFF;
+}
+#uWonMes strong {
+    color:#FFF; 
+    font-weight: 900; 
+    font-style:italic;
+}
+#myCanvas {
+    z-index: 5;
+    padding: 0;
+    margin: auto;
+    height: 800px;
+    width: 1600px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -800px;
+    background-color: #0a0716;
+}
+.replay {
+    padding:15px 30px;
+    background-color: #FFF;
+    color: green;
+    font-size: 85%;
+    font-weight: bold;
+    border: 0px solid #CCC;
+    width: 50%;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+/* TRY AGAIN Styles */
+
+.sry {
+    opacity:0; 
+    z-index:10;
+    display:none; 
+    width:100%; height:100vh; 
+    overflow:hidden; 
+    text-align:center; 
+}
+#sryBkgd {
+    position:absolute;
+    width:100%;
+    top:0px;
+    left:0px;
+    display:block;
+    height:100vh;
+    background-color:#011222;
+    background-image:url(../imgs/question-01.svg); 
+    background-size:120%; 
+    background-position-x: center; 
+    background-repeat: no-repeat;
+}
+#sryMes {
+    position:absolute; 
+    z-index:10;left:50%; 
+    margin-left:-170px; 
+    top:25%; 
+    width:300px; 
+    min-height:400px; 
+    text-align:center; 
+    border:1px solid blue; 
+    padding:20px; 
+    font-size:x-large; 
+    -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
+    box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
+    background-color:#06335acb; 
+    border-radius: 5%; 
+    color:green;}
+
+#sryMes h1 {
+    font-weight: 900; 
+    font-style:italic; 
+    font-family: 'Exo', sans-serif; 
+    font-size: 200%; color:#FFF;}
+
+#sryMes strong {
+    color:#FFF; font-weight: 900; font-style:italic;}
