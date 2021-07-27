@@ -5,6 +5,9 @@ body {
     color:#fff; 
     background-color: #011222; 
     text-align: center;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
     }
 /* Button reset */
 button {
