@@ -59,7 +59,7 @@ input:focus, textarea:focus, select:focus{
     width:100%;
     margin:auto;
 }
-.content p {padding:10px;}
+.content p {padding:10px; text-align: center;}
 .gamebox {
     background-color: #06335a; 
     display:block;
@@ -76,7 +76,7 @@ input:focus, textarea:focus, select:focus{
     text-align:center;
     background-color: #06335a; 
     color:green;
-    font-size:150%;
+    font-size:120%;
     font-weight: 900 !important;
     font-weight: bold;
 }
