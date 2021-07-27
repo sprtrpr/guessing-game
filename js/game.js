@@ -14,6 +14,7 @@ function Guess() {
                 //location.reload();
                 function winfadeIn() {
                     document.getElementsByClassName('uWon')[0].style.display = 'block';
+                    document.getElementsByClassName('content')[0].style.display = 'none';
                     var fade = document.getElementsByClassName('uWon')[0];
                     var opacity = 0;
                     var intervalID = setInterval(function() {
@@ -34,6 +35,7 @@ function Guess() {
                 //location.reload(); 
                 function lostfadeIn() {
                     document.getElementsByClassName('sry')[0].style.display = 'block';
+                    document.getElementsByClassName('content')[0].style.display = 'none';
                     var fade = document.getElementsByClassName('sry')[0];
                     var opacity = 0;
                     var intervalID = setInterval(function() {
