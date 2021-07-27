@@ -46,6 +46,11 @@ button {
 	outline: inherit;
     -webkit-appearance: none;
 }
+input[type="button"]  {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;  
+}
 
  /* Content Styles */
 
