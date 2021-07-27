@@ -59,7 +59,7 @@ input {
 
  /* Content Styles */
 
-h1 {font-weight: 900; font-style:italic; font-family: 'Exo', sans-serif; font-size: 300%;}
+h1 {font-weight: 900; font-style:italic; font-family: 'Exo', sans-serif; font-size: 250%;}
 input {font-family: 'Exo', sans-serif;}
 input:focus, textarea:focus, select:focus{
     outline: none;
