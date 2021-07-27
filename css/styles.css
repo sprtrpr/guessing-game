@@ -1,11 +1,46 @@
 body {
     font-family:Arial, Helvetica, sans-serif; 
     font-family: 'Exo', sans-serif;
-    font-weight: 100;
+    font-size:1.25em;
     color:#fff; 
     background-color: #011222; 
     text-align: center;
     }
+/* Button reset */
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:active {
+    outline: none;
+    border: none;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+ /* Content Styles */
+
 h1 {font-weight: 900; font-style:italic; font-family: 'Exo', sans-serif; font-size: 300%;}
 input {font-family: 'Exo', sans-serif;}
 input:focus, textarea:focus, select:focus{
@@ -14,15 +49,15 @@ input:focus, textarea:focus, select:focus{
 .content {
     display:block;
     width:100%;
-    max-width:400px;
     margin:auto;
 }
+.content p {padding:10px;}
 .gamebox {
     background-color: #06335a; 
     display:block;
-    width:320px;
+    width:300px;
     padding:20px;
-    margin:auto 20px;
+    margin:auto;
     border-radius: 5%;
     border: 1px solid blue;
     -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
@@ -33,7 +68,7 @@ input:focus, textarea:focus, select:focus{
     text-align:center;
     background-color: #06335a; 
     color:green;
-    font-size:175%;
+    font-size:150%;
     font-weight: 900 !important;
     font-weight: bold;
 }
@@ -56,10 +91,11 @@ input:focus, textarea:focus, select:focus{
     color:#FFF;
     font-size: 400%;
     border-radius: 50%;
-    height:200px;
-    width:200px;
+    height:175px;
+    width:175px;
     -webkit-box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68); 
     box-shadow: -1px 2px 17px 0px rgba(255,255,255,0.68);
+    margin:auto;
 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
