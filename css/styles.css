@@ -51,6 +51,11 @@ input[type="button"]  {
     -moz-appearance: none !important;
     appearance: none !important;  
 }
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
 
  /* Content Styles */
 
